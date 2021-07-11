@@ -1,0 +1,20 @@
+@startuml Hello World
+!define DARKBLUE
+!includeurl https://raw.githubusercontent.com/Drakemor/RedDress-PlantUML/master/style.puml
+
+class MyClass {
+  <color:green>+ int count</color>
+  int number
+  String name
+  methodOne()
+  methodTwo()
+}
+
+class SecondClass {
+  int aSecretField
+  void secretMethod()
+}
+note left : note test
+MyClass <|-- SecondClass
+
+@enduml
